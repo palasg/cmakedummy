@@ -24,28 +24,16 @@ file(GLOB SOURCES "src/*.cpp")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-get_filename_component(parent_dir ../ ABSOLUTE)
-
-message(${parent_dir})
-message(${parent_dir}/libs})
-
-
-
+link_directories(${CMAKE_SOURCE_DIR}/lib)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC uiolibs)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC mathlibs)
 
-#target_include_directories(${PROJECT_NAME} PUBLIC
-#"${PROJECT_BINARY_DIR}"
-#"${PROJECT_SOURCE_DIR}/libs/uiolibs/includes"
-#"${PROJECT_SOURCE_DIR}/libs/mathlibs/includes"
-#)
-
 target_include_directories(${PROJECT_NAME} PUBLIC
 "${PROJECT_BINARY_DIR}"
-"${PROJECT_SOURCE_DIR}/libs/uiolibs/"
-"${PROJECT_SOURCE_DIR}/libs/mathlibs/"
+"${PROJECT_SOURCE_DIR}/libs/uiolibs/includes"
+"${PROJECT_SOURCE_DIR}/libs/mathlibs/includes"
 )
 
 
