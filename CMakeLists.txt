@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.16)
 
 project(dummyCMake)
 
@@ -17,6 +17,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -Wextra")
 set(CMAKE_CXX_FLAGS_RELEASE "-o3")
 
 add_subdirectory(libs)
+add_subdirectory(test)
 
 include_directories(includes)
 

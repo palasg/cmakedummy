@@ -1,5 +1,5 @@
 #include "../includes/ArithmaticOperations.hpp"
 
-using namespace mathlibs;
+// using namespace mathlibs;
 
-int AddInit(const int a, const int b) { return a + b; }
+int mathlibs::AddInit(const int a, const int b) { return a + b; }

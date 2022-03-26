@@ -12,9 +12,8 @@ public:
   void Addition();
 
   ~CalcProcess();
-
-private:
   int addint(const int first, const int second);
+private:
   int sum = 0;
 };
 

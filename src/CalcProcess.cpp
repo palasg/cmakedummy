@@ -16,3 +16,6 @@ void CalcProcess::Addition() {
   int secondui = userinput::getInit();
   int result = addint(firstui, secondui);
 }
+CalcProcess::~CalcProcess(){
+  //dtor;
+}
