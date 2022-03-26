@@ -8,11 +8,12 @@ namespace Calc {
 class CalcProcess {
 public:
   CalcProcess();
+  ~CalcProcess();
 
   void Addition();
 
-  ~CalcProcess();
   int addint(const int first, const int second);
+
 private:
   int sum = 0;
 };

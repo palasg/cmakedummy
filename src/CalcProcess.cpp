@@ -2,9 +2,11 @@
 #include "../libs/mathlibs/includes/ArithmaticOperations.hpp"
 #include "../libs/uiolibs/includes/getUInput.hpp"
 
-using namespace Calc;
+namespace Calc {
 
-CalcProcess::CalcProcess() {}
+CalcProcess::CalcProcess() {
+  //ctor
+}
 
 int CalcProcess::addint(const int first, const int second) {
   return mathlibs::AddInit(first, second);
@@ -16,6 +18,8 @@ void CalcProcess::Addition() {
   int secondui = userinput::getInit();
   int result = addint(firstui, secondui);
 }
-CalcProcess::~CalcProcess(){
-  //dtor;
+CalcProcess::~CalcProcess() {
+  // dtor;
 }
+
+} // namespace Calc

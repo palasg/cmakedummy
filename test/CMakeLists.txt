@@ -1,5 +1,5 @@
 SET(BINARY ${CMAKE_PROJECT_NAME}_tst)
-include_directories(inc)
+include_directories(inc/)
 include_directories("${CMAKE_SOURCE_DIR}/includes")
 file(GLOB TEST_SOURCES "src/*.cpp")
 add_executable(${BINARY} ${TEST_SOURCES} )
